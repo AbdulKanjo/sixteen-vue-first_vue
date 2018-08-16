@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <div id="nav">
+      {{ test }}
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
     </div>
@@ -8,7 +9,20 @@
   </div>
 </template>
 
-<style>
+<script>
+import axois from 'axios';
+
+export default {
+  data(){
+    return {
+      test: "This is a test"
+    }
+  }
+}
+</script>
+
+
+<style >
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
